@@ -29,8 +29,10 @@ class UseThreadsImproved{
         System.out.println("Runs main thread");
 
         MyThread myThread = new MyThread("Child #2");
+        MyThread myThread1 = new MyThread("Child #3");
+        MyThread myThread2 = new MyThread("Child #4");
 
-        for (int i = 0; i < 50; i++){
+        do{
             System.out.print(".");
             try{
                 Thread.sleep(100);
@@ -39,6 +41,36 @@ class UseThreadsImproved{
                 System.out.println("Paused main thread");
             }
         }
+        while (myThread.thread.isAlive()||
+                myThread1.thread.isAlive()||
+                myThread2.thread.isAlive()); // After all additional threads completed, then end main
+
         System.out.println("Finishes main thread");
+    }
+}
+
+class JoinThreads{
+    public static void main(String[] args) {
+        System.out.println("Run main thread!");
+
+        MyThread myThread1 = new MyThread("Child #1");
+        myThread1.thread.setPriority(10);                       // set runtime priority for thread #1
+        MyThread myThread2 = new MyThread("Child #2");
+        myThread2.thread.setPriority(1);
+        MyThread myThread3 = new MyThread("Child #3");
+        myThread3.thread.setPriority(5);
+
+        try{
+            myThread1.thread.join();
+            System.out.println("Child #1 - connected");
+            myThread2.thread.join();
+            System.out.println("Child #2 - connected");
+            myThread3.thread.join();
+            System.out.println("Child #3 - connected");
+        }
+        catch (InterruptedException exc){
+            System.out.println("Paused main thread");
+        }
+        System.out.println("End main thread");
     }
 }

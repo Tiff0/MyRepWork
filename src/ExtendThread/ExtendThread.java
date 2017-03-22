@@ -23,7 +23,7 @@ public class ExtendThread extends Thread {
     }
 }
 
-class UseThreadsImproved{
+class UseExtendThreadsImproved{
     public static void main(String[] args) {
         System.out.println("Runs main thread");
 
