@@ -9,15 +9,22 @@ public class MultiThreadDemo {
         }
 
         MyMultiThread thread = new MyMultiThread();
+        MyMultiThread thread1 = new MyMultiThread();
 
         thread.setNewThread(xarr, 3);
+        thread1.setNewThread(xarr, 2);
 
         thread.start();
+        thread1.start();
+
         try {
             thread.join();
+            thread1.join();
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
+
         System.out.println(thread.answer);
+        System.out.println(thread1.getName() + " " + thread1.answer);
     }
 }

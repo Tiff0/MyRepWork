@@ -10,8 +10,8 @@ public class MyMultiThread extends Thread{
         answer = ms.MathSumm(array, mnozh);
     }
 
-    public void setNewThread(int mass[], int mnozh){
-        this.array = mass;
+    public synchronized void setNewThread(int mass[], int mnozh){
+        array = mass;
         this.mnozh = mnozh;
     }
 }
