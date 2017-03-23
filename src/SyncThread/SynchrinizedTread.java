@@ -51,5 +51,6 @@ public class SynchrinizedTread {
 
         MyThread myThread = new MyThread("Child #1", a);
         MyThread myThread1 = new MyThread("Child #2", a);
+
     }
 }
