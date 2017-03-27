@@ -20,4 +20,3 @@ class sumArray{
         return sum;
     }
 }
-

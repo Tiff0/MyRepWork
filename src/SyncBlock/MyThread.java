@@ -18,7 +18,9 @@ class MyThread implements Runnable{
 
         System.out.println(thread.getName() + " - runs");
 
-        answer = sa.sumArray(a);
+        synchronized (sa) {
+            answer = sa.sumArray(a);
+        }
         System.out.println("Summ for " + thread.getName() + " : " + answer);
         System.out.println(thread.getName() + " - ends");
     }
