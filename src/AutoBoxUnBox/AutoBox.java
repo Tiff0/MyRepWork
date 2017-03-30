@@ -21,7 +21,6 @@ public class AutoBox {
 
         Integer iOb = 100; // Boxing
         int i = iOb;        //UnBoxing
-
         System.out.println(i + " " + iOb);
 
         // Передача методу m() значения типа int
