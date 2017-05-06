@@ -1,4 +1,4 @@
-package QueueFinal;
+/*package QueueFinal;
 
 public class GenQDemo {
     public static void main(String[] args) {
@@ -52,4 +52,4 @@ public class GenQDemo {
         }
         System.out.println();
     }
-}
+}*/

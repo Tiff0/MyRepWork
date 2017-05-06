@@ -12,6 +12,8 @@ public class LambdaArgumentDemo {
 
         System.out.println("Input line " + inStr);
 
+        // Опрделить лямбда-выражение, располаг содержимое строки в обратном порядке,
+        // и присвоить его переменной ссылающейся на экземпляр StringFunc
         StringFunc reverse = (str) -> {
             String result = "";
 
@@ -21,6 +23,8 @@ public class LambdaArgumentDemo {
             return result;
         };
 
+        // Передать reverse методу changeStr() в качестве первого аргумента
+        // Входную строку в качестве второго аргумента
         outStr = changestr(reverse, inStr);
         System.out.println("outline " + outStr);
 

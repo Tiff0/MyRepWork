@@ -1,4 +1,4 @@
-package QueueFinal;
+/*package QueueFinal;
 
 public class GenQueue<T> implements IGen<T> {
     private T arr[]; // Массив для хранения элементов очереди
@@ -29,3 +29,4 @@ public class GenQueue<T> implements IGen<T> {
         return arr[getloc++];
     }
 }
+*/
