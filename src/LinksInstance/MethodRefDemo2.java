@@ -9,7 +9,7 @@ public class MethodRefDemo2 {
 
         MyPredict myPredict = myNum::isFactor;
 
-        result = myPredict.test(3);
+        result = myPredict.test( 3);
         if (result) System.out.println("plus");
 
         MyPredict myPredict1 = myNum2::isFactor;
@@ -23,6 +23,7 @@ class MyIntNum{
     private int v;
 
     MyIntNum (int v){
+        assert(v > 0);
         this.v = v;
     }
 
