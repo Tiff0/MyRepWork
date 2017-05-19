@@ -17,18 +17,18 @@ class KtoD{
         {
             do {
                 out.print(": ");
-                str = br.readLine();
+        str = br.readLine();
 
-                if (str.compareTo("stop") == 0) break;
+        if (str.compareTo("stop") == 0) break;
 
-                str = str + "\r\n"; // add symbols of another line
-                fw.write(str);
-            } while (str.compareTo("stop") != 0);
-        } catch (IOException exc){
-            out.println("Error IO: " + exc);
+        str = str + "\r\n"; // add symbols of another line
+        fw.write(str);
+    } while (str.compareTo("stop") != 0);
+} catch (IOException exc){
+        out.println("Error IO: " + exc);
         }
-    }
-}
+        }
+        }
 
 class DtoS{
     public static void main(String args[]){

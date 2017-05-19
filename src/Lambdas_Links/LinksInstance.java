@@ -1,6 +1,6 @@
-package LinksInstance;
+package Lambdas_Links;
 
-public class MethodRefDemo2 {
+public class LinksInstance {
     public static void main(String[] args) {
         boolean result;
 

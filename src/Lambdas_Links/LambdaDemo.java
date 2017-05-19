@@ -1,4 +1,16 @@
-package Lambda;
+package Lambdas_Links;
+
+interface MyParamValue {
+    double getValue(double v);
+}
+
+
+
+interface MyValue {
+    double getValue();
+}
+
+
 
 public class LambdaDemo {
     public static void main(String[] args) {

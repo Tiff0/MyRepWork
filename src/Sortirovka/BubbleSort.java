@@ -1,8 +1,8 @@
-package MassiveChapter5;
+package Sortirovka;
 
 import static java.lang.System.out;
 
-public class ArrayErr {
+public class BubbleSort {
     public static void main (String args []){
         int nums [] = {99, -10, 100123, 18, -978, 5623,
                 463, -9, 287, 49};

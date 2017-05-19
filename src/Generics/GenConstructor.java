@@ -1,8 +1,6 @@
-package GenericConstr;
+package Generics;
 
-import com.sun.org.apache.xpath.internal.SourceTree;
-
-public class GenConsDemo {
+public class GenConstructor {
     public static void main(String[] args) {
         Summation summation = new Summation(4.1);
         Summation summation1 = new Summation("String");

@@ -1,4 +1,4 @@
-package ThreadMyTest;
+package MultiThreads;
 
 public class MyThreadTest {
     public static void main(String[] args)

@@ -1,8 +1,17 @@
-package LmbdaTest;
+package Lambdas_Links;
 
-public class TestRun {
+/**
+ * Created by zTiff on 5/20/2017.
+ */
+interface StrFTest <T> {
+    boolean test(T str1, T str2);
+}
+
+
+
+public class GenericLmbd {
     public static void main(String[] args) {
-        StrFTest <String> isIn = (String a, String b) -> {
+        StrFTest<String> isIn = (String a, String b) -> {
             if (b.contains(a)) return true;
             else return false;
         };
@@ -14,7 +23,7 @@ public class TestRun {
         if (!isIn.test(str, "fjhagsjfdhg asgfads"))
             System.out.println("Not Contains");
 
-        StrFTest <Integer> isNumeric = (a, b) -> (a%b == 0) ? true : false;
+        StrFTest<Integer> isNumeric = (a, b) -> (a%b == 0) ? true : false;
 
         if (isNumeric.test(10, 5))
             System.out.println("0");
@@ -23,3 +32,4 @@ public class TestRun {
             System.out.println("False");
     }
 }
+

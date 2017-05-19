@@ -1,4 +1,4 @@
-package UseMainThread;
+package MultiThreads;
 
 public class UseMain {
     public static void main(String[] args) {

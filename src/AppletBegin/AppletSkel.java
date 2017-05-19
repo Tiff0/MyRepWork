@@ -1,14 +1,13 @@
-package AppletCarcas;
+package AppletBegin;
 
+import java.applet.Applet;
 import java.awt.*;
-import java.applet.*;
-
 /*
 <applet code = "AppletSkel" width = 300 height = 300>
 </applet>
  */
 
-public class AppletSkel extends Applet{
+public class AppletSkel extends Applet {
 
     @Override
     // Runs first

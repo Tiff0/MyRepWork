@@ -1,4 +1,9 @@
-package LambdaArgumentDemo;
+package Lambdas_Links;
+
+interface StringFunc {
+    String func(String str);
+}
+
 
 public class LambdaArgumentDemo {
     // First is func. interface, second is str

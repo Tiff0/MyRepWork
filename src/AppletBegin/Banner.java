@@ -1,4 +1,4 @@
-package BannerApplet;
+package AppletBegin;
 
 import java.awt.*;
 import java.applet.*;

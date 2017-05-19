@@ -1,14 +1,14 @@
-package GenericInter;
+package Generics;
 
 interface Containment<T>{
 
     boolean contains(T o);
 }
 
-public class MyClass<T> implements Containment<T> {
+public class GenericInterface<T> implements Containment<T> {
     T[] arrayRef;
 
-    MyClass(T[] o){
+    GenericInterface(T[] o){
         arrayRef = o;
     }
 
@@ -23,7 +23,7 @@ class GenericInterDemo{
     public static void main(String[] args) {
         Integer x[] = {1, 2, 3, 4};
 
-        MyClass<Integer> myClass = new MyClass<>(x);
+        GenericInterface<Integer> myClass = new GenericInterface<>(x);
 
         if(myClass.contains(2)) System.out.println("2+");
         else System.out.println("2-");
