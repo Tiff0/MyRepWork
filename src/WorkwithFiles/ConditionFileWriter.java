@@ -1,8 +1,10 @@
-package ZapisVFail;
+package WorkwithFiles;
 
 import java.io.*;
 
-public class UserWriter {
+// Запись состояния
+
+public class ConditionFileWriter {
     public static void main(String[] args)
         throws Exception{
         User user = new User();
@@ -17,5 +19,18 @@ public class UserWriter {
         ObjectInputStream objectInputStream = new ObjectInputStream(fileInputStream);
         User user1 = (User) objectInputStream.readObject();
         System.out.println(user1.getLifecycle());
+    }
+}
+
+
+class User implements Serializable {
+    private int lifecycle;
+
+    public int getLifecycle() {
+        return lifecycle;
+    }
+
+    public void setLifecycle(int lifecycle) {
+        this.lifecycle = lifecycle;
     }
 }

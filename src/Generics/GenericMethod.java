@@ -1,6 +1,6 @@
-package ObobMethod;
+package Generics;
 
-public class GenericMethodDemo {
+public class GenericMethod {
 
     static <T extends Comparable<T>, V extends T>
             boolean arraysEqual(T[] x, V[] y) {
